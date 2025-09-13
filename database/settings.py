@@ -26,7 +26,9 @@ SECRET_KEY = 'django-insecure-xr8&x%(z=7imea@8@6%prulcp7s6s6=i#a3fo!!()na(-0ad(*
 DEBUG = True
 
 ALLOWED_HOSTS = ["127.0.0.1", "localhost","django-database-orx4.onrender.com"]
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://django-database-orx4.onrender.com",
+]
 
 # Application definition
 
@@ -123,5 +125,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 
 
